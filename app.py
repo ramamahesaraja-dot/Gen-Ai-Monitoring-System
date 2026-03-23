@@ -10,7 +10,7 @@ from src.analytics_engine import get_last_hours_data, get_last_hours_summary
 
 st.set_page_config(page_title="LNG Boiler SCADA AI Assistant", layout="wide")
 
-# =====================
+# ==============e=======
 # LOAD MODEL
 # =====================
 model = joblib.load("outputs/models/random_forest_fault_model.pkl")

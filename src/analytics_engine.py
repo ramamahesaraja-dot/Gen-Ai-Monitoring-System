@@ -22,8 +22,10 @@ FEATURES = [
     "efficiency_loss_pct"
 ]
 
+DATA_PATH = "data/sample_data.csv"
+
 def load_plant_data():
-    df = pd.read_csv("data/sample_data.csv")
+    df = pd.read_csv(DATA_PATH)
     df["timestamp"] = pd.to_datetime(df["timestamp"], errors="coerce")
     df = df.sort_values("timestamp").reset_index(drop=True)
     return df
@@ -47,9 +49,6 @@ def get_model_metrics():
 
     df_model = df[FEATURES + ["fault_soon"]].copy()
     df_model = df_model.ffill().bfill().dropna()
-
-    if len(df_model) > 100000:
-        df_model = df_model.sample(n=100000, random_state=42)
 
     X = df_model[FEATURES]
     y = df_model["fault_soon"]
