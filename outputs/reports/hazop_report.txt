@@ -1,0 +1,41 @@
+
+LAPORAN OTOMATIS PREDICTIVE MAINTENANCE DAN INTERPRETASI HAZOP
+================================================================
+
+Timestamp pengamatan : 3/30/2024 23:59
+Probabilitas fault   : 0.7650
+Level risiko         : TINGGI
+Status sistem        : POTENSI FAILURE TERDETEKSI
+
+Ringkasan Kondisi
+-----------------
+Sistem predictive maintenance mendeteksi kondisi operasi dengan tingkat risiko tinggi.
+Analisis dilakukan terhadap parameter kritis seperti temperatur, tekanan, aliran, getaran,
+arus motor, dan efisiensi sistem.
+
+Interpretasi HAZOP
+------------------
+Deviasi:
+- High vibration
+- High motor current
+- High pressure
+
+Kemungkinan penyebab:
+- Kemungkinan bearing wear, misalignment, atau degradasi rotating equipment
+- Overload motor atau peningkatan tahanan mekanis
+- Gangguan aliran, control valve bermasalah, atau pressure control tidak stabil
+
+Konsekuensi potensial:
+- Kerusakan mekanis, penurunan efisiensi, dan potensi shutdown boiler
+- Overheating motor, konsumsi energi meningkat, dan potensi trip
+- Risiko overpressure, gangguan keselamatan proses, dan shutdown
+
+Rekomendasi tindakan:
+- Lakukan inspeksi bearing, alignment, dan rotating equipment pendukung boiler
+- Periksa beban motor, sistem penggerak, dan kondisi kelistrikan
+- Verifikasi pressure control loop, valve, dan pressure relief system
+
+Kesimpulan
+----------
+Sistem ini mampu memberikan peringatan dini dan rekomendasi teknis berbasis data
+untuk mendukung pengambilan keputusan engineer pada predictive maintenance boiler/LNG.
