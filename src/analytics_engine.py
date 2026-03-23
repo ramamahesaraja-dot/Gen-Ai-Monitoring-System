@@ -23,7 +23,7 @@ FEATURES = [
 ]
 
 def load_plant_data():
-    df = pd.read_csv("data/compressed_data.csv")
+    df = pd.read_csv("data/sample_data.csv")
     df["timestamp"] = pd.to_datetime(df["timestamp"], errors="coerce")
     df = df.sort_values("timestamp").reset_index(drop=True)
     return df
